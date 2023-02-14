@@ -1,0 +1,139 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/sticky-footer-navbar/">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <title> Javery Construction Company</title>
+</head>
+<header>
+    <nav class="navbar navbar-expand-lg text-bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="{% url 'index' %}"><strong> Javery Construction Corporation</strong></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{% url 'personnel' %}">Company Personnel</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expaanded="false">Projects</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'c-projects' %}">Completed</a></li>
+                    <li><a class="dropdown-item" href="{% url 'p-projects' %}">Pending</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'products' %}" class="nav-link">Products and Services</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">2nd Menu </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#"> 3 </a></li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#"> 4
+                    <span class="float-end custom-toggle-arrow">&#187</span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#" class="dropdown-item">4.1</a></li>
+                        <li><a href="#" class="dropdown-item">4.2</a></li>
+                    </ul>
+                </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">3rd Menu </a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#"> 5 <span class="float-end custom-toggle-arrow">&#187</span> </a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#" class="dropdown-item">5.1</a></li>
+                      <li><a href="#" class="dropdown-item">5.2</a></li>
+                    </ul>
+                  </li>
+                  <li><a class="dropdown-item" href="#"> 6 </a></li>
+                  <li class="dropdown-submenu">
+                    <a class="dropdown-item" href="#"> 7 <span
+                        class="float-end custom-toggle-arrow">&#187</span></a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">7.1</a></li>
+                      <li><a class="dropdown-item" href="#">7.2</a></li>
+      
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item" href="#"> 7.3<span
+                            class="float-end custom-toggle-arrow">&#187</span></a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">7.3.1</a></li>
+                          <li><a class="dropdown-item" href="#">7.3.2</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    <!-- <nav class="nav justify-content-center" aria-label="Secondary navigation">
+        <li class="nav-item"><a class="nav-link" href="#">Single Item</a></li>
+  
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Multi-level Item
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#"> Menu Item 1</a></li>
+            <li><a class="dropdown-item" href="#"> Menu Item 2</a></li>
+            <li class="dropdown-submenu">
+              <a class="dropdown-item" href="#"> Second Level <span
+                  class="float-end custom-toggle-arrow">&#187</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Second Level Item 1</a></li>
+                <li><a class="dropdown-item" href="#">Second Level Item 2</a></li>
+
+                <li class="dropdown-submenu">
+                  <a class="dropdown-item" href="#"> Third Level <span
+                      class="float-end custom-toggle-arrow">&#187</span></a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Third Level Item 1</a></li>
+                    <li><a class="dropdown-item" href="#">Third Level Item 2</a></li>
+                  </ul>
+                </li>
+
+
+              </ul>
+            </li>
+          </ul>
+        </li>
+</nav> -->
+</header>
+<body class="d-flex flex-column min-vh-100">
+  <main class="background">
+      {% block content %}{% endblock %}
+    </main>
+      <footer class="footer py-3 text-bg-dark">
+      <div class="container">
+        <p class="text-center">Copyright from ###. @2022</p>
+      </div>
+    </footer>
+</body>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+
+
+</html>
