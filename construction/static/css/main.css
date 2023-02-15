@@ -2,11 +2,11 @@ body {
   /* background: url("/static/admin/img/construct.jpg")!important; */
   /* background-color: aqua; */
   /* background: url("/construction/static/media/construct.jpg") no-repeat fixed center; */
-  background: url('{% static "construct.jpg" %}')!important;
+  background-image: url('{% static "construct.jpg" %}')!important;
 }
 
 .background {
-  background-image: url('{% static "construct.jpg" %}');
+  background-image: url('{% static "construct.jpg" %}')!important;
 }
 .dropdown:hover >.dropdown-menu{
   display: block !important;
@@ -48,4 +48,13 @@ body {
 .content {
   margin-top: 3rem!important;
   margin-bottom: 3rem!important;
+}
+
+.navbar-brand, .nav-text {
+  color: white!important;
+}
+
+.carousel-item img {
+  width:640px;
+  height:360px;
 }
